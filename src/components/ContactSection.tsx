@@ -3,7 +3,6 @@ import { Mail, MapPin, Send, Calendar, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { toast } from "sonner";
 import { motion } from "framer-motion";
 
 const containerVariants = {
