@@ -62,7 +62,7 @@ const skillCategories = [
       { name: "Docker", level: 85 },
       { name: "Environment Variables & Secrets", level: 90 },
       { name: "Render", level: 85 },
-      { name: "Vercel", level: 90 },
+      { name: "Vercel/Netlify", level: 90 },
       { name: "Linux (CLI & Server Basics)", level: 80 },
     ],
   },
