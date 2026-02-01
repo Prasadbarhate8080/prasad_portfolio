@@ -71,7 +71,7 @@ export const ProjectsSection = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div key={project.title} className="project-card group">
               {/* Project Image */}
               <div className="relative overflow-hidden aspect-video">
