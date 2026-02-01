@@ -86,17 +86,37 @@ export const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    toast.success("Message sent! I'll get back to you soon.");
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const form = e.currentTarget;
+  const formData = new FormData(form);
+
+  const params = new URLSearchParams();
+
+  formData.forEach((value, key) => {
+    params.append(key, value.toString());
+  });
+
+  try {
+    await fetch("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: params.toString(),
+    });
+
+    alert("Message sent successfully!");
     setFormData({ name: "", email: "", message: "" });
+  } catch (error) {
+    alert("Failed to send message");
+  } finally {
     setIsSubmitting(false);
-  };
+  }
+};
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
