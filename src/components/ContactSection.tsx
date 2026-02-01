@@ -278,7 +278,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 
           {/* Contact Form */}
           <motion.form
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
             className="glass-card rounded-xl p-8 relative overflow-hidden"
             variants={formVariants}
             initial="hidden"
