@@ -298,7 +298,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
               }}
               transition={{ duration: 0.3 }}
             />
-
+            <input type="hidden" name="form-name" value="contact" />
             <div className="space-y-6 relative">
               <motion.div
                 custom={0}
