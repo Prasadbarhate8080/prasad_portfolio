@@ -108,7 +108,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       body: params.toString(),
     });
 
-    toast("Message sent successfully")
+    toast.success("Message sent successfull")
     setFormData({ name: "", email: "", message: "" });
   } catch (error) {
     alert("Failed to send message");
