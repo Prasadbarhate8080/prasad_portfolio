@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -107,7 +108,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       body: params.toString(),
     });
 
-    alert("Message sent successfully!");
+    toast("Message sent successfully")
     setFormData({ name: "", email: "", message: "" });
   } catch (error) {
     alert("Failed to send message");
