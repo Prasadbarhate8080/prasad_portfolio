@@ -81,6 +81,12 @@ const additionalSkills = [
 
 const highlights = [
   {
+    icon: Monitor,
+    title: "Frontend Development",
+    description:
+      "Creating intuitive interfaces that users enjoy And Error free api integration",
+  },
+  {
     icon: Code2,
     title: "Clean Code",
     description:
@@ -90,12 +96,6 @@ const highlights = [
     icon: Rocket,
     title: "Performance",
     description: "Optimized applications that load fast and run smooth",
-  },
-  {
-    icon: Monitor,
-    title: "Frontend Development",
-    description:
-      "Creating intuitive interfaces that users enjoy And Error free api integration",
   },
   {
     icon: Server,

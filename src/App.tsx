@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import { ProjectsSection } from "./components/ProjectSection";
+import ToolsSection from "./components/ToolSection";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <HeroSection />
         <AboutSection />
+        <ToolsSection />
         <ProjectsSection />
         <ContactSection />
         <Footer />
