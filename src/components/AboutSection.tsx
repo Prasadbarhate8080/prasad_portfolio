@@ -7,7 +7,6 @@ import {
   Smartphone,
   Server,
   GitBranch,
-  Terminal,
   Cpu,
   Cloud,
   Lock,
