@@ -29,10 +29,10 @@ function Navbar() {
       <div className="flex h-16 md:h-20  justify-between max-w-7xl mx-auto px-4 items-center">
         <a href="#">
           <span className="text-xl font-bold">
-            <span className="text-2xl font-bold gradient-text">
+            <span className="text-2xl  font-bold gradient-text">
               <img
               width={70}
-              className="rotate-15"
+              className="rotate-15 w-[60px] md:w-[70px]"
               src="/portfolio_logo.png" alt="prasad portfolio" />
             </span>
           </span>

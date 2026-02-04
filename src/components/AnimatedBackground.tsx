@@ -113,7 +113,7 @@ function AnimatedBackground() {
       )}
       {/* Animated gradient orbs */}
       <motion.div
-        className="absolute top-1/4  -left-1/4 w-[600px] h-[600px] rounded-full bg-primary/15 blur-[120px]"
+        className="absolute top-1/4  -left-1/4 w-[300px] h-[300px]  md:w-[600px] md:h-[600px] rounded-full bg-primary/15 blur-[120px]"
         animate={{
           x: [0, 100, 0],
           y: [0, 50, 0],
@@ -126,7 +126,7 @@ function AnimatedBackground() {
         }}
       />
       <motion.div
-        className="absolute  bottom-1/4 -right-1/4 w-[500px] h-[500px] rounded-full bg-accent/15 blur-[100px]"
+        className="absolute  bottom-1/4 -right-1/4 w-[300px] h-[300px]  md:w-[500px] md:h-[500px] rounded-full bg-accent/15 blur-[100px]"
         animate={{
           x: [0, -80, 0],
           y: [0, -60, 0],
@@ -140,7 +140,7 @@ function AnimatedBackground() {
         }}
       />
       <motion.div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary/5 blur-[150px]"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px]  md:w-[800px] md:h-[800px] rounded-full bg-primary/5 blur-[150px]"
         animate={{
           scale: [1, 1.1, 1],
           opacity: [0.5, 0.8, 0.5],

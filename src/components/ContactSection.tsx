@@ -212,19 +212,19 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                 key={info.title}
                 custom={index}
                 variants={cardVariants}
-                className="glass-card rounded-xl p-6 group hover:border-primary/50 transition-all duration-300"
+                className="glass-card rounded-xl p-2 group hover:border-primary/50 transition-all duration-300"
                 whileHover={{
                   x: 10,
                   boxShadow: "0 10px 30px hsl(190 100% 50% / 0.1)",
                 }}
               >
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-2">
                   <motion.div
                     className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors duration-300"
                     whileHover={{ rotate: 12, scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <info.icon className="w-6 h-6 text-primary" />
+                    <info.icon className="w-5 h-6 text-primary" />
                   </motion.div>
                   <div>
                     <h3 className="font-semibold mb-1 group-hover:text-primary transition-colors">
@@ -253,7 +253,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
               transition={{ delay: 0.5 }}
               className="glass-card rounded-xl p-6 border-primary/30"
             >
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-4">
                 <motion.div
                   animate={{
                     rotate: [0, 10, -10, 0],
