@@ -153,7 +153,7 @@ function AnimatedBackground() {
       />
 
       {/* Animated grid lines */}
-      <svg className="absolute inset-0 w-full h-full opacity-10">
+      <svg className="absolute inset-0 w-full h-full  opacity-10">
         <defs>
           <pattern
             id="grid"

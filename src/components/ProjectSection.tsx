@@ -134,7 +134,7 @@ export const ProjectsSection = () => {
         <div className="text-center mt-12">
           <Button variant="heroOutline" size="xl" asChild>
             <a
-              href="https://github.com"
+              href="https://github.com/prasadbarhate8080"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import {
   Code2,
-  Palette,
   Rocket,
   Database,
   Globe,
@@ -15,6 +14,8 @@ import {
   Gauge,
   Paintbrush,
   Bug,
+  Monitor,
+  Github,
 } from "lucide-react";
 
 const skillCategories = [
@@ -70,7 +71,7 @@ const skillCategories = [
 
 const additionalSkills = [
   { name: "Git", icon: GitBranch },
-  { name: "Testing", icon: Terminal },
+  { name: "Github", icon: Github },
   { name: "UI/UX Design", icon: Paintbrush },
   { name: "Responsive Design", icon: Smartphone },
   { name: "Performance", icon: Gauge },
@@ -83,7 +84,8 @@ const highlights = [
   {
     icon: Code2,
     title: "Clean Code",
-    description: "Writing maintainable, scalable code that your team will love",
+    description:
+      "Writing maintainable, scalable code that your team will love",
   },
   {
     icon: Rocket,
@@ -91,9 +93,10 @@ const highlights = [
     description: "Optimized applications that load fast and run smooth",
   },
   {
-    icon: Palette,
-    title: "UI/UX Focus",
-    description: "Creating intuitive interfaces that users enjoy",
+    icon: Monitor,
+    title: "Frontend Development",
+    description:
+      "Creating intuitive interfaces that users enjoy And Error free api integration",
   },
   {
     icon: Server,
@@ -164,7 +167,8 @@ export const AboutSection = () => {
             About Me
           </span>
           <h2 className="section-heading">
-            Turning Ideas Into <span className="gradient-text">Reality</span>
+            Turning Ideas Into{" "}
+            <span className="gradient-text">Reality</span>
           </h2>
           <p className="section-subheading mx-auto">
             I specialize in building modern web applications that solve
@@ -222,8 +226,8 @@ export const AboutSection = () => {
               My <span className="gradient-text">Skills</span>
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit built over years of hands-on experience
-              across the full development stack
+              A comprehensive toolkit built over years of hands-on
+              experience across the full development stack
             </p>
           </motion.div>
 
@@ -249,7 +253,9 @@ export const AboutSection = () => {
                   >
                     <category.icon className="w-6 h-6 text-primary" />
                   </motion.div>
-                  <h4 className="text-lg font-semibold">{category.title}</h4>
+                  <h4 className="text-lg font-semibold">
+                    {category.title}
+                  </h4>
                 </div>
 
                 {/* Skills with Progress Bars */}
@@ -274,7 +280,8 @@ export const AboutSection = () => {
                           whileInView={{ opacity: 1 }}
                           viewport={{ once: true }}
                           transition={{
-                            delay: skillIndex * 0.1 + categoryIndex * 0.2 + 0.5,
+                            delay:
+                              skillIndex * 0.1 + categoryIndex * 0.2 + 0.5,
                           }}
                         >
                           {skill.level}%
@@ -289,7 +296,8 @@ export const AboutSection = () => {
                           viewport={{ once: true }}
                           className="h-full rounded-full bg-gradient-to-r from-primary via-primary to-accent relative"
                           style={{
-                            boxShadow: "0 0 10px hsl(var(--primary) / 0.5)",
+                            boxShadow:
+                              "0 0 10px hsl(var(--primary) / 0.5)",
                           }}
                         >
                           {/* Shimmer effect on progress bar */}

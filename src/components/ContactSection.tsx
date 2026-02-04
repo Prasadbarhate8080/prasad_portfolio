@@ -59,14 +59,14 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "hello@alexchen.dev",
-    href: "mailto:hello@alexchen.dev",
+    content: "2005prasadbarhate@gmail.com",
+    href: "mailto:2005prasadbarhate@gmail.com",
     isLink: true,
   },
   {
     icon: MapPin,
     title: "Location",
-    content: "San Francisco, CA (Remote Available)",
+    content: "India, Maharashtra (Remote Available)",
     isLink: false,
   },
   {

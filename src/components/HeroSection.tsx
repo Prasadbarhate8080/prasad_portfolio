@@ -86,8 +86,8 @@ useEffect(() => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
-            I craft exceptional digital experiences with clean code and modern
-            technologies. Let's build something amazing together.
+            I build clean, modern web applications and focus on creating smooth
+            user experiences. Lets build something great together.
           </motion.p>
           {/* CTA Buttons */}
           <motion.div
@@ -111,9 +111,12 @@ useEffect(() => {
             className="flex items-center justify-center gap-6"
           >
             {[
-              { icon: Github, href: "https://github.com" },
-              { icon: Linkedin, href: "https://linkedin.com" },
-              { icon: Twitter, href: "https://twitter.com" },
+              { icon: Github, href: "https://github.com/prasadbarhate8080" },
+              {
+                icon: Linkedin,
+                href: "https://www.linkedin.com/in/prasad-barhate-a5442b2b4",
+              },
+              { icon: Twitter, href: "https://x.com/prasad_dev25" },
             ].map((social, index) => (
               <motion.a
                 key={social.href}
