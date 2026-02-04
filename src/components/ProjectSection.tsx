@@ -54,7 +54,7 @@ export const ProjectsSection = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_hsl(265_80%_60%_/_0.08)_0%,_transparent_70%)]" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary font-mono text-sm tracking-wider uppercase mb-4 block">

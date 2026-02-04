@@ -159,7 +159,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         }}
       />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <motion.div
           className="text-center mb-16"
