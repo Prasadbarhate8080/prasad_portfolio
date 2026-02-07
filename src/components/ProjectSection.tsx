@@ -1,27 +1,25 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Anonymous Feedback App",
     description:
-      "A full-stack e-commerce solution with real-time inventory, secure payments, and admin dashboard.",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+      "A full-stack anonymous feedback platform where users can send and receive honest messages without revealing their identity. Includes secure authentication, real-time message handling, and a clean, responsive dashboard for managing feedback.",
+    tags: ["Next.js", "MongoDB", "NextAuth", "Tailwind CSS"],
+    image: "/messaging_app_cover.png",
+    liveUrl: "https://feedback-app-random.vercel.app/",
+    githubUrl: "https://github.com/Prasadbarhate8080/feedback_app",
     featured: true,
   },
   {
-    title: "SaaS Analytics Dashboard",
+    title: "Blogging Platform",
     description:
-      "Real-time analytics dashboard with interactive charts, custom reports, and team collaboration.",
-    tags: ["React", "TypeScript", "D3.js", "Node.js"],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+      "A full-stack blogging platform where users can read, write, and publish blogs with a clean editor and responsive design. Includes user authentication, category-based browsing, and SEO-friendly pages for better content visibility.",
+    tags: ["React.js", "AppWrite", "Tailwind CSS", "RTE(TinyMCE)"],
+    image: "/react_blog_app_cover.png",
+    liveUrl: "https://reactblogapp-azure.vercel.app/",
+    githubUrl: "https://github.com/Prasadbarhate8080/react-blog-app",
     featured: true,
   },
   {
@@ -36,14 +34,14 @@ const projects = [
     featured: true,
   },
   {
-    title: "Task Management App",
+    title: "Train Ticket Booking App",
     description:
-      "Collaborative project management tool with kanban boards, real-time updates, and integrations.",
-    tags: ["React", "Firebase", "Tailwind", "Framer"],
-    image:
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=500&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+      "An online train ticket booking application that allows users to search trains, check seat availability, and book tickets seamlessly. Includes user authentication, booking history, fare details, and a responsive interface for a smooth travel experience.",
+    tags: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
+    image: "/train_ticket_cover.png",
+    liveUrl: "https://easytrain.vercel.app/",
+    githubUrl:
+      "https://github.com/Prasadbarhate8080/Train-ticket-booking-system-frontend",
     featured: false,
   },
 ];
@@ -125,6 +123,11 @@ export const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
+              </div>
+              <div className="flex justify-end p-2">
+                <Button variant={"hero"} className="flex">
+                  <Video /> Watch Demo
+                </Button >
               </div>
             </div>
           ))}
