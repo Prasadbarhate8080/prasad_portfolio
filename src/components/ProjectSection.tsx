@@ -23,16 +23,24 @@ const projects = [
     featured: true,
   },
   {
-    title: "AI Content Generator",
+    title: "Reels Pro",
     description:
-      "AI-powered content creation tool with GPT integration, templates, and export options.",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop",
-    liveUrl: "#",
-    githubUrl: "#",
+      "A full-stack short video (Reels) platform where users can upload, stream, and explore vertical videos. Features include creator-style upload flow, optimized video delivery, responsive reel feed, and secure backend APIs.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "ImageKit",
+      "NextAuth",
+      "Tailwind CSS",
+      "DaisyUi"
+    ],
+    image: "/reels_pro_cover.png",
+    liveUrl: "https://reels-pro-teal.vercel.app/",
+    githubUrl: "https://github.com/Prasadbarhate8080/reels-pro",
     featured: true,
   },
+
   {
     title: "Train Ticket Booking App",
     description:
@@ -62,8 +70,8 @@ export const ProjectsSection = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="section-subheading mx-auto">
-            A selection of projects that showcase my skills and experience in
-            building modern web applications.
+            A selection of projects that showcase my skills and experience
+            in building modern web applications.
           </p>
         </div>
 
@@ -127,7 +135,7 @@ export const ProjectsSection = () => {
               <div className="flex justify-end p-2">
                 <Button variant={"hero"} className="flex">
                   <Video /> Watch Demo
-                </Button >
+                </Button>
               </div>
             </div>
           ))}

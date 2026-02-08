@@ -6,21 +6,33 @@ const outerIcons = ["figma_icon.png", "framermotion_icon.png", "html_icon.jpg", 
 
 const extraOuterIcons = ["nextjs_icon.jpg", "postman_icon.png", "react_icon.jpg", "tailwind_icon.jpg", "nodejs_icon.jpg"];
 
-
 export default function ToolsSection() {
   return (
-    <div className="text-center overflow-hidden ">
+    <div className="text-center overflow-hidden">
       <h1 className="text-xl font-bold mb-6 text-muted-foreground">
         Tools I Use
       </h1>
 
       {/* MAIN WRAPPER */}
-      <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 mx-auto mt-10  rounded-full">
+      <div
+        className="
+          relative
+          w-72 h-72
+          sm:w-80 sm:h-80
+          md:w-96 md:h-96
+          mx-auto mt-10
+          rounded-full
+          scale-100
+          lg:scale-110
+          xl:scale-125
+          transition-transform
+        "
+      >
         {/* 🟣 EXTRA OUTER CIRCLE */}
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
-          className="absolute inset-0  rounded-full"
+          className="absolute inset-0 rounded-full"
         >
           {extraOuterIcons.map((icon, index) => {
             const angle = (360 / extraOuterIcons.length) * index;
@@ -28,7 +40,7 @@ export default function ToolsSection() {
             return (
               <div
                 key={index}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 style={{
                   transform: `
                     rotate(${angle}deg)
@@ -37,14 +49,12 @@ export default function ToolsSection() {
                   `,
                 }}
               >
-                <div className="text-xs sm:text-sm font-mono">
-                  <img
-                    src={icon}
-                    alt="js icon"
-                    width={23}
-                    className="object-fit rounded-md"
-                  />
-                </div>
+                <img
+                  src={icon}
+                  alt="tool icon"
+                  width={23}
+                  className="rounded-md"
+                />
               </div>
             );
           })}
@@ -54,7 +64,7 @@ export default function ToolsSection() {
         <motion.div
           animate={{ rotate: -360 }}
           transition={{ repeat: Infinity, duration: 22, ease: "linear" }}
-          className="absolute inset-0  rounded-full"
+          className="absolute inset-0 rounded-full"
         >
           {outerIcons.map((icon, index) => {
             const angle = (360 / outerIcons.length) * index;
@@ -71,14 +81,12 @@ export default function ToolsSection() {
                   `,
                 }}
               >
-                <div className="text-sm sm:text-base">
-                  <img
-                    src={icon}
-                    alt="js icon"
-                    width={23}
-                    className="object-fit rounded-md"
-                  />
-                </div>
+                <img
+                  src={icon}
+                  alt="tool icon"
+                  width={23}
+                  className="rounded-md"
+                />
               </div>
             );
           })}
@@ -88,8 +96,12 @@ export default function ToolsSection() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
-          className="absolute top-1/2 left-1/2 w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52
-                     -translate-x-1/2 -translate-y-1/2  rounded-full"
+          className="
+            absolute top-1/2 left-1/2
+            w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52
+            -translate-x-1/2 -translate-y-1/2
+            rounded-full
+          "
         >
           {innerIcons.map((icon, index) => {
             const angle = (360 / innerIcons.length) * index;
@@ -106,14 +118,12 @@ export default function ToolsSection() {
                   `,
                 }}
               >
-                <div className="text-sm sm:text-base font-semibold">
-                  <img
-                    src={icon}
-                    alt="js icon"
-                    width={23}
-                    className="object-fit rounded-md"
-                  />
-                </div>
+                <img
+                  src={icon}
+                  alt="tool icon"
+                  width={23}
+                  className="rounded-md"
+                />
               </div>
             );
           })}
@@ -122,3 +132,4 @@ export default function ToolsSection() {
     </div>
   );
 }
+
