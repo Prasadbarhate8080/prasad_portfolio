@@ -4,7 +4,7 @@ import AnimatedBackground from "./components/AnimatedBackground";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
 import HeroSection from "./components/HeroSection";
-import MiniProjectsSection from "./components/MiniProjectSection";
+import { MiniProjectsSection } from "./components/MiniProjectSection";
 import Navbar from "./components/Navbar";
 import { ProjectsSection } from "./components/ProjectSection";
 import ToolsSection from "./components/ToolSection";

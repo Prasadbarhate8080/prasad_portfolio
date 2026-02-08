@@ -6,7 +6,7 @@ const projects = [
     title: "Anonymous Feedback App",
     description:
       "A full-stack anonymous feedback platform where users can send and receive honest messages without revealing their identity. Includes secure authentication, real-time message handling, and a clean, responsive dashboard for managing feedback.",
-    tags: ["Next.js", "MongoDB", "NextAuth", "Tailwind CSS"],
+    tags: ["Next.js", "MongoDB", "NextAuth", "Tailwind CSS","Shadcn"],
     image: "/messaging_app_cover.png",
     liveUrl: "https://feedback-app-random.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/feedback_app",
@@ -33,7 +33,6 @@ const projects = [
       "ImageKit",
       "NextAuth",
       "Tailwind CSS",
-      "DaisyUi"
     ],
     image: "/reels_pro_cover.png",
     liveUrl: "https://reels-pro-teal.vercel.app/",
@@ -78,7 +77,7 @@ export const ProjectsSection = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div key={project.title} className="project-card group">
+            <div key={project.title} className="project-card group ">
               {/* Project Image */}
               <div className="relative overflow-hidden aspect-video">
                 <img
@@ -132,7 +131,7 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
               </div>
-              <div className="flex justify-end p-2">
+              <div className="flex justify-end p-2 mt-auto">
                 <Button variant={"hero"} className="flex">
                   <Video /> Watch Demo
                 </Button>
