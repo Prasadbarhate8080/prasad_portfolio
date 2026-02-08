@@ -1,12 +1,14 @@
 import { ExternalLink, Github, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { VideoModal } from "./VideoModal";
 
 const projects = [
   {
     title: "Anonymous Feedback App",
     description:
       "A full-stack anonymous feedback platform where users can send and receive honest messages without revealing their identity. Includes secure authentication, real-time message handling, and a clean, responsive dashboard for managing feedback.",
-    tags: ["Next.js", "MongoDB", "NextAuth", "Tailwind CSS","Shadcn"],
+    tags: ["Next.js", "MongoDB", "NextAuth", "Tailwind CSS","Shadcn","Typescript"],
     image: "/messaging_app_cover.png",
     liveUrl: "https://feedback-app-random.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/feedback_app",
@@ -16,7 +18,7 @@ const projects = [
     title: "Blogging Platform",
     description:
       "A full-stack blogging platform where users can read, write, and publish blogs with a clean editor and responsive design. Includes user authentication, category-based browsing, and SEO-friendly pages for better content visibility.",
-    tags: ["React.js", "AppWrite", "Tailwind CSS", "RTE(TinyMCE)"],
+    tags: ["React.js", "AppWrite", "Tailwind CSS", "RTE(TinyMCE)","React-hook-form"],
     image: "/react_blog_app_cover.png",
     liveUrl: "https://reactblogapp-azure.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/react-blog-app",
@@ -44,7 +46,7 @@ const projects = [
     title: "Train Ticket Booking App",
     description:
       "An online train ticket booking application that allows users to search trains, check seat availability, and book tickets seamlessly. Includes user authentication, booking history, fare details, and a responsive interface for a smooth travel experience.",
-    tags: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
+    tags: ["React.js", "Node.js", "MongoDB", "Tailwind CSS","Express.js"],
     image: "/train_ticket_cover.png",
     liveUrl: "https://easytrain.vercel.app/",
     githubUrl:
@@ -54,6 +56,12 @@ const projects = [
 ];
 
 export const ProjectsSection = () => {
+  const [open, setOpen] = useState(false);
+  const [videoUrl, setVideoUrl] = useState<string | null>(null);
+  const playVideo = (url: string) => {
+    setVideoUrl(url);
+    setOpen(true);
+  };
   return (
     <section id="projects" className="py-24 md:py-32 relative">
       {/* Background */}
@@ -132,7 +140,15 @@ export const ProjectsSection = () => {
                 </div>
               </div>
               <div className="flex justify-end p-2 mt-auto">
-                <Button variant={"hero"} className="flex">
+                <Button
+                  variant={"hero"}
+                  className="flex"
+                  onClick={() =>
+                    playVideo(
+                      "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1",
+                    )
+                  }
+                >
                   <Video /> Watch Demo
                 </Button>
               </div>
@@ -153,6 +169,11 @@ export const ProjectsSection = () => {
           </Button>
         </div>
       </div>
+      <VideoModal
+        isOpen={open}
+        videoUrl={videoUrl}
+        onClose={() => setOpen(false)}
+      />
     </section>
   );
 };
