@@ -140,7 +140,6 @@ export const ProjectsSection = () => {
             </div>
           ))}
         </div>
-
         {/* View More */}
         <div className="text-center mt-12">
           <Button variant="heroOutline" size="xl" asChild>
