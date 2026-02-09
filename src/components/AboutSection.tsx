@@ -373,7 +373,7 @@ export const AboutSection = () => {
               { value: "12+", label: "Tools & Libraries Used" },
               { value: "10+", label: "Personal Projects" },
               { value: "∞", label: "Learning Mindset" },
-              { value: "10+", label: "Tools & Libraries Used" },
+              { value: "35+", label: "Github Repositories" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
