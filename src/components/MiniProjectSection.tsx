@@ -5,52 +5,48 @@ import { motion } from "framer-motion";
 
 const smallProjects = [
   {
-    title: "Weather Widget",
-    description:
-      "A clean weather app with location-based forecasts and animated icons.",
-    tags: ["React", "API", "CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "Calculator",
+    description: "A simple calculator made using html css javascript",
+    tags: ["Html", "CSS", "Javascript"],
+    githubUrl: "https://github.com/Prasadbarhate8080/Calculator",
+    liveUrl: "/",
   },
   {
-    title: "Markdown Previewer",
+    title: "Currency Converter",
     description:
-      "Real-time markdown editor with syntax highlighting and export options.",
-    tags: ["TypeScript", "React", "Markdown"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A currency converter made using the react javascript and currencyApi",
+    tags: ["JavaScript", "React", "CurrencyApi"],
+    liveUrl: "/",
+    githubUrl: "https://github.com/Prasadbarhate8080/currency_converter",
   },
   {
-    title: "Color Palette Generator",
-    description:
-      "Generate beautiful color schemes with export to CSS, Tailwind, and SCSS.",
-    tags: ["React", "Color Theory", "Tailwind"],
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "Movie Search App",
+    description: "A movie search app made using the html css js",
+    tags: ["Html", "CSS", "Javascript"],
+    liveUrl: "/",
+    githubUrl: "https://github.com/Prasadbarhate8080/movie_search_app",
   },
   {
-    title: "Pomodoro Timer",
-    description:
-      "Productivity timer with customizable intervals and sound notifications.",
-    tags: ["React", "Hooks", "Audio API"],
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "Password Generator",
+    description: "A Password generator made using react and javascript",
+    tags: ["React", "Javascript", "Html", "CSS"],
+    liveUrl: "/",
+    githubUrl: "https://github.com/Prasadbarhate8080/password_generator",
   },
   {
-    title: "Quote Generator",
-    description:
-      "Random inspirational quotes with share functionality and favorites.",
-    tags: ["React", "API", "LocalStorage"],
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "Whether App",
+    description: "A Whether app made using react and javascript",
+    tags: ["React", "Javascript", "Html", "CSS"],
+    liveUrl: "/",
+    githubUrl: "https://github.com/Prasadbarhate8080/react_wheather_app",
   },
   {
-    title: "Expense Tracker",
+    title: "Todo List",
     description:
-      "Simple expense tracking with charts and category breakdowns.",
-    tags: ["React", "Chart.js", "Firebase"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A Todo list application made using react javascript and localstorage",
+    tags: ["React", "JavaScript", "LocalStorage"],
+    liveUrl: "/",
+    githubUrl: "https://github.com/Prasadbarhate8080/react_todo_list",
   },
 ];
 
@@ -96,7 +92,6 @@ const ProjectCard = ({
       >
         <a
           href={project.liveUrl}
-          target="_blank"
           rel="noopener noreferrer"
         >
           <ExternalLink className="w-4 h-4 mr-1" />

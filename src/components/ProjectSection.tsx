@@ -8,21 +8,38 @@ const projects = [
     title: "Anonymous Feedback App",
     description:
       "A full-stack anonymous feedback platform where users can send and receive honest messages without revealing their identity. Includes secure authentication, real-time message handling, and a clean, responsive dashboard for managing feedback.",
-    tags: ["Next.js", "MongoDB", "NextAuth", "Tailwind CSS","Shadcn","Typescript"],
+    tags: [
+      "Next.js",
+      "MongoDB",
+      "NextAuth",
+      "Tailwind CSS",
+      "Shadcn",
+      "Typescript",
+    ],
     image: "/messaging_app_cover.png",
     liveUrl: "https://feedback-app-random.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/feedback_app",
     featured: true,
+    videoUrl:
+      "https://ik.imagekit.io/5iqyjvlzq/fulll_stack_app.mp4?updatedAt=1770663024212",
   },
   {
     title: "Blogging Platform",
     description:
       "A full-stack blogging platform where users can read, write, and publish blogs with a clean editor and responsive design. Includes user authentication, category-based browsing, and SEO-friendly pages for better content visibility.",
-    tags: ["React.js", "AppWrite", "Tailwind CSS", "RTE(TinyMCE)","React-hook-form"],
+    tags: [
+      "React.js",
+      "AppWrite",
+      "Tailwind CSS",
+      "RTE(TinyMCE)",
+      "React-hook-form",
+    ],
     image: "/react_blog_app_cover.png",
     liveUrl: "https://reactblogapp-azure.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/react-blog-app",
     featured: true,
+    videoUrl:
+      "https://ik.imagekit.io/5iqyjvlzq/react_blog_app.mp4?updatedAt=1770662702367",
   },
   {
     title: "Reels Pro",
@@ -40,18 +57,28 @@ const projects = [
     liveUrl: "https://reels-pro-teal.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/reels-pro",
     featured: true,
+    videoUrl:
+      "https://ik.imagekit.io/5iqyjvlzq/reels_pro.mp4?updatedAt=1770663785453",
   },
 
   {
     title: "Train Ticket Booking App",
     description:
       "An online train ticket booking application that allows users to search trains, check seat availability, and book tickets seamlessly. Includes user authentication, booking history, fare details, and a responsive interface for a smooth travel experience.",
-    tags: ["React.js", "Node.js", "MongoDB", "Tailwind CSS","Express.js"],
+    tags: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Tailwind",
+      "Express.js",
+      "Redux Toolkit",
+    ],
     image: "/train_ticket_cover.png",
     liveUrl: "https://easytrain.vercel.app/",
     githubUrl:
       "https://github.com/Prasadbarhate8080/Train-ticket-booking-system-frontend",
     featured: false,
+    videoUrl: "https://ik.imagekit.io/5iqyjvlzq/train_ticket_booking.mp4",
   },
 ];
 
@@ -145,11 +172,11 @@ export const ProjectsSection = () => {
                   className="flex"
                   onClick={() =>
                     playVideo(
-                      "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1",
+                      project.videoUrl,
                     )
                   }
                 >
-                  <Video /> Watch Demo
+                  <Video /> Know More
                 </Button>
               </div>
             </div>
