@@ -56,8 +56,13 @@ function Navbar({
           ))}
         </div>
         <div className="hidden md:flex  gap-2 justify-center items-center">
-          <Button variant="heroOutline" size="lg" asChild
-          onClick={() => {setReumeopen(true)}}
+          <Button
+            variant="heroOutline"
+            size="lg"
+            asChild
+            onClick={() => {
+              setReumeopen(true);
+            }}
           >
             <a href="#">Resume</a>
           </Button>
@@ -88,6 +93,16 @@ function Navbar({
                 </a>
               ))}
               <div className="flex  gap-2 flex-col justify-center items-center">
+                <Button
+                  variant="heroOutline"
+                  size="lg"
+                  asChild
+                  onClick={() => {
+                    setReumeopen(true);
+                  }}
+                >
+                  <a href="#">Resume</a>
+                </Button>
                 <Button variant="hero" size="lg" asChild>
                   <a href="#contact">Let's Talk</a>
                 </Button>
