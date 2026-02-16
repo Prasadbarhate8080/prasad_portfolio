@@ -17,7 +17,7 @@ const projects = [
       "Typescript",
     ],
     image: "/messaging_app_cover.png",
-    liveUrl: "https://ik.imagekit.io/5iqyjvlzq/full%20stack%20app.mp4",
+    liveUrl: "https://feedback-app-random.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/feedback_app",
     featured: true,
     videoUrl:
@@ -35,7 +35,7 @@ const projects = [
       "React-hook-form",
     ],
     image: "/react_blog_app_cover.png",
-    liveUrl: "https://ik.imagekit.io/5iqyjvlzq/react_blog_app.mp4",
+    liveUrl: "https://reactblogapp-azure.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/react-blog-app",
     featured: true,
     videoUrl:
@@ -54,7 +54,7 @@ const projects = [
       "Tailwind CSS",
     ],
     image: "/reels_pro_cover.png",
-    liveUrl: "https://ik.imagekit.io/5iqyjvlzq/reels_pro.mp4",
+    liveUrl: "https://reels-pro-teal.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/reels-pro",
     featured: true,
     videoUrl:
@@ -74,7 +74,7 @@ const projects = [
       "Redux Toolkit",
     ],
     image: "/train_ticket_cover.png",
-    liveUrl: "https://ik.imagekit.io/5iqyjvlzq/train_ticket_booking.mp4",
+    liveUrl: "https://easytrain.vercel.app/",
     githubUrl:
       "https://github.com/Prasadbarhate8080/Train-ticket-booking-system-frontend",
     featured: false,
