@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import "./Navbar.css";
 
 function Navbar({
-  resumeopen,
   setReumeopen,
 }: {
   resumeopen: boolean;
