@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
+import {  motion } from "framer-motion";
+import { ArrowDown, Github, Linkedin, LucideCross, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-function HeroSection() {
+function HeroSection({
+  resumeopen,
+  setReumeopen,
+}: {
+  resumeopen: boolean;
+  setReumeopen: (value: boolean) => void;
+}) {
   const roles = [
     "Full-Stack Developer",
     "React & Next.js Specialist",
@@ -13,37 +19,70 @@ function HeroSection() {
   const [currentRole, setCurrentRole] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-
-useEffect(() => {
-  const role = roles[currentRole];
-  const timeout = setTimeout(
-    () => {
-      if (!isDeleting) {
-        if (displayText.length < role.length) {
-          setDisplayText(role.slice(0, displayText.length + 1));
+  
+  useEffect(() => {
+    const role = roles[currentRole];
+    const timeout = setTimeout(
+      () => {
+        if (!isDeleting) {
+          if (displayText.length < role.length) {
+            setDisplayText(role.slice(0, displayText.length + 1));
+          } else {
+            setTimeout(() => setIsDeleting(true), 2000);
+          }
         } else {
-          setTimeout(() => setIsDeleting(true), 2000);
+          if (displayText.length > 0) {
+            setDisplayText(displayText.slice(0, -1));
+          } else {
+            setIsDeleting(false);
+            setCurrentRole((prev) => (prev + 1) % roles.length);
+          }
         }
-      } else {
-        if (displayText.length > 0) {
-          setDisplayText(displayText.slice(0, -1));
-        } else {
-          setIsDeleting(false);
-          setCurrentRole((prev) => (prev + 1) % roles.length);
-        }
-      }
-    },
-    isDeleting ? 50 : 100,
-  );
-
-  return () => clearTimeout(timeout);
-}, [displayText, isDeleting, currentRole]);
+      },
+      isDeleting ? 50 : 100,
+    );
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, currentRole]);
 
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden rounded-md"
     >
+      {resumeopen && (
+        <motion.div
+          className="inset-0 bg-white/60 absolute z-60"
+          initial={{
+            y: -100,
+            opacity: 0,
+            scale: 0.7,
+          }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            scale: 1,
+          }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <div className="relative w-full h-full bg-white rounded-xl overflow-hidden">
+            {/* Close Button */}
+            <span
+              className="top-2 right-2 absolute  z-50 cursor-pointer"
+              onClick={() => setReumeopen(false)}
+            >
+              <LucideCross className="rotate-45" />
+            </span>
+
+            {/* PDF Viewer */}
+            <iframe
+              src="/Prasad_Barhate_Resume.pdf"
+              className="w-full h-full"
+            />
+          </div>
+        </motion.div>
+      )}
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Greeting */}
@@ -86,8 +125,8 @@ useEffect(() => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
-            I build clean, modern web applications and focus on creating smooth
-            user experiences. Lets build something great together.
+            I build clean, modern web applications and focus on creating
+            smooth user experiences. Lets build something great together.
           </motion.p>
           {/* CTA Buttons */}
           <motion.div
@@ -111,7 +150,10 @@ useEffect(() => {
             className="flex items-center justify-center gap-6"
           >
             {[
-              { icon: Github, href: "https://github.com/prasadbarhate8080" },
+              {
+                icon: Github,
+                href: "https://github.com/prasadbarhate8080",
+              },
               {
                 icon: Linkedin,
                 href: "https://www.linkedin.com/in/prasad-barhate-a5442b2b4",

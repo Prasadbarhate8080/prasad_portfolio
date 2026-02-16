@@ -1,8 +1,15 @@
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
+import "./Navbar.css";
 
-function Navbar() {
+function Navbar({
+  resumeopen,
+  setReumeopen,
+}: {
+  resumeopen: boolean;
+  setReumeopen: (value: boolean) => void;
+}) {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
@@ -23,7 +30,9 @@ function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "glass-card border-b border-border/50" : "bg-transparent"
+        isScrolled
+          ? "glass-card border-b border-border/50"
+          : "bg-transparent"
       }`}
     >
       <div className="flex h-16 md:h-20  justify-between max-w-7xl mx-auto px-4 items-center">
@@ -31,9 +40,11 @@ function Navbar() {
           <span className="text-xl font-bold">
             <span className="text-2xl  font-bold gradient-text">
               <img
-              width={70}
-              className="rotate-15 w-[60px] md:w-[70px]"
-              src="/portfolio_logo.png" alt="prasad portfolio" />
+                width={70}
+                className="rotate-15 w-[60px] md:w-[70px]"
+                src="/portfolio_logo.png"
+                alt="prasad portfolio"
+              />
             </span>
           </span>
         </a>
@@ -44,7 +55,12 @@ function Navbar() {
             </a>
           ))}
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:flex  gap-2 justify-center items-center">
+          <Button variant="heroOutline" size="lg" asChild
+          onClick={() => {setReumeopen(true)}}
+          >
+            <a href="#">Resume</a>
+          </Button>
           <Button variant="hero" size="lg" asChild>
             <a href="#contact">Let's Talk</a>
           </Button>
@@ -71,9 +87,11 @@ function Navbar() {
                   {item.name}
                 </a>
               ))}
-              <Button variant="hero" size="lg" className="mt-4" asChild>
-                <a href="#contact">Let's Talk</a>
-              </Button>
+              <div className="flex  gap-2 flex-col justify-center items-center">
+                <Button variant="hero" size="lg" asChild>
+                  <a href="#contact">Let's Talk</a>
+                </Button>
+              </div>
             </div>
           </div>
         )}

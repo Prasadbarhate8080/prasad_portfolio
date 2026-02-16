@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import { AboutSection } from "./components/AboutSection";
 import AnimatedBackground from "./components/AnimatedBackground";
@@ -9,12 +10,13 @@ import Navbar from "./components/Navbar";
 import { ProjectsSection } from "./components/ProjectSection";
 import ToolsSection from "./components/ToolSection";
 function App() {
+  const [reumeopen, setReumeopen] = useState<boolean>(false);
   return (
     <>
       <div className="min-h-screen bg-background">
         <AnimatedBackground />
-        <Navbar />
-        <HeroSection />
+        <Navbar resumeopen={reumeopen} setReumeopen={setReumeopen} />
+        <HeroSection resumeopen={reumeopen} setReumeopen={setReumeopen} />
         <AboutSection />
         <ToolsSection />
         <ProjectsSection />
