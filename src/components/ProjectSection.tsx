@@ -21,7 +21,7 @@ const projects = [
     githubUrl: "https://github.com/Prasadbarhate8080/feedback_app",
     featured: true,
     videoUrl:
-      "https://ik.imagekit.io/5iqyjvlzq/fulll_stack_app.mp4?updatedAt=1770663024212",
+      "https://ik.imagekit.io/5iqyjvlzq/full%20stack%20app.mp4?updatedAt=1771224416208",
   },
   {
     title: "Blogging Platform",
@@ -39,7 +39,7 @@ const projects = [
     githubUrl: "https://github.com/Prasadbarhate8080/react-blog-app",
     featured: true,
     videoUrl:
-      "https://ik.imagekit.io/5iqyjvlzq/react_blog_app.mp4?updatedAt=1770662702367",
+      "https://ik.imagekit.io/5iqyjvlzq/react_blog_app.mp4?updatedAt=1771224579901",
   },
   {
     title: "Reels Pro",
@@ -58,7 +58,7 @@ const projects = [
     githubUrl: "https://github.com/Prasadbarhate8080/reels-pro",
     featured: true,
     videoUrl:
-      "https://ik.imagekit.io/5iqyjvlzq/reels_pro.mp4?updatedAt=1770663785453",
+      "https://ik.imagekit.io/5iqyjvlzq/reels_pro.mp4?updatedAt=1771224457677",
   },
 
   {
@@ -78,7 +78,8 @@ const projects = [
     githubUrl:
       "https://github.com/Prasadbarhate8080/Train-ticket-booking-system-frontend",
     featured: false,
-    videoUrl: "https://ik.imagekit.io/5iqyjvlzq/train_ticket_booking.mp4",
+    videoUrl:
+      "https://ik.imagekit.io/5iqyjvlzq/train_ticket_booking.mp4?updatedAt=1771224445900",
   },
 ];
 
