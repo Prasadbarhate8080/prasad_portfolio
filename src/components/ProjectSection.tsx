@@ -76,7 +76,7 @@ const projects = [
       "https://github.com/Prasadbarhate8080/Train-ticket-booking-system-frontend",
     featured: false,
     videoUrl:
-      "https://ik.imagekit.io/5iqyjvlzq/train_ticket_booking.mp4?updatedAt=1771224445900",
+      "https://ik.imagekit.io/n9fktxemx/train_ticket_booking.mp4?tr=orig",
   },
 ];
 
