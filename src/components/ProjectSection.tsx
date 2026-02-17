@@ -20,7 +20,7 @@ const projects = [
     liveUrl: "https://feedback-app-random.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/feedback_app",
     featured: true,
-    videoUrl: "https://ik.imagekit.io/yqu14knh8p/full%20stack%20app.mp4",
+    videoUrl: "https://ik.imagekit.io/n9fktxemx/full%20stack%20app.mp4",
   },
   {
     title: "Blogging Platform",
@@ -55,7 +55,7 @@ const projects = [
     liveUrl: "https://reels-pro-teal.vercel.app/",
     githubUrl: "https://github.com/Prasadbarhate8080/reels-pro",
     featured: true,
-    videoUrl: "https://ik.imagekit.io/yqu14knh8p/reels_pro.mp4",
+    videoUrl: "https://ik.imagekit.io/n9fktxemx/reels_pro.mp4",
   },
 
   {
